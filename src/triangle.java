@@ -1,4 +1,4 @@
-//문제 5번
+//LOY 스터디 - 1주차 문제 4번
 import java.util.Scanner;
 
 public class triangle {
