@@ -1,4 +1,5 @@
-// 5번 문제
+// 5번 문제 -> 함수로 수정해서 다시 수정하기
+
 package First_week;
 public class array2 {
     public static void main(String[] args) {
@@ -16,5 +17,4 @@ public class array2 {
             System.out.print(Original[i] + " , ");
             }
     }
-    }
-    
+}

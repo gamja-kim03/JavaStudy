@@ -1,4 +1,5 @@
-//1주차 문제 3번
+//1주차 문제 3번 , 새로운 배열을 만들어서 다시, 배열을 다시 수정
+
 package First_week;
 
 public class array {
