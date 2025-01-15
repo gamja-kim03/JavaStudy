@@ -2,8 +2,7 @@ package Scound_week;
 
 import java.util.Arrays;
 
-// https://adjh54.tistory.com/451 참고고
-
+// https://adjh54.tistory.com/451 참고
 public class twoarray { // 'two' 메서드 정의
 
     public static int[][] two(int[] oneArray, int rows, int cols) {
@@ -13,11 +12,11 @@ public class twoarray { // 'two' 메서드 정의
         for (int i = 0; i < rows; i++) {// 행을 순차적으로 반복
             for (int j = 0; j < cols; j++) {// 열을 순차적으로 반복
 
-             /* ("i * cols) + j"-> 1차원 배열 인덱스를 계산하는 방식
+                /* ("i * cols) + j"-> 1차원 배열 인덱스를 계산하는 방식
                 1차원 배열 oneArray의 크기를 초가하지 않기 위해서 if를 사용
                 2차원 배열에 값을 채울 때, oneArray의 요소들이 모두 채워지면 더 이상 값을 넣을 수 없기 떄문
                 초과하는 경우에는 0을 채워 넣음
-                */
+                 */
                 if ((i * cols) + j < oneArray.length) {
                     twoArray[i][j] = oneArray[(i * cols) + j];
                 } else {
@@ -37,14 +36,14 @@ public class twoarray { // 'two' 메서드 정의
         // 'two' 메서드 호출
         int[][] n = two(oneArray, rows, cols);
 
-        for (int[] k : n) {
+        for (int[] k : n) { //책 p.136 참고
+
             /* 'for-each' 문: n 배열의 각 행을 하나씩 k에 대입
             n.length번 반복, k는 n[0], .args.., n[3]로 번갈아 반복
             k = n[0] -> [4, 3, 6]
             k = n[1] -> [7, 8, 3]
             k = n[2] -> [4, 5, 3]
             k = n[3] -> [4, 1, 0]  */
-
             System.out.print(Arrays.toString(k));
         }
     }
