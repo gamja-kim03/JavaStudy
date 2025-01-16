@@ -23,7 +23,7 @@ public class StaticEx {
     public static void main(String[] args) {
         {   
             StaticEx main = new StaticEx();
-            main.print();
+            main.print();   
         }
     } //-> 이런식으로 객체를 생성해야 실행 될 수 있음  */
 
