@@ -10,3 +10,19 @@
 - static 키워드를 붙이면 객체 생성 없이도 메서드나 변수를 사용할 수 있음
 -> 그래서 main 함수도 static을 사용하여 객체 생성없이 호출될 수 있는 것
 
+-----------------------------------------------------------------------------------------------------------------
+
+static : 정적
+1. 필드.변수 -> 모든 객체 공유
+2. 메소드 -> 객체 생성 없이 호출
+    - main 함수
+    - 객체 생성이 필요하지 않는 클래스 
+        -> 필드가 없는 것
+        -> 클래스 이름으로 공유하고 싶은 것
+
+
+instance member 메소드 -> static member 변수  : O
+instance member 메소드 -> static member 메소드  : O
+
+static member 메소드 -> instance member 메소드 : X
+static member 메소드 -> instance member 변수 : X
