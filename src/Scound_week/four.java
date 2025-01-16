@@ -9,7 +9,7 @@ public class four {
             System.out.print("input number : ");
             int x = scanner.nextInt();
 
-            for (int i = 1; i <= x; i++) { //i를 1부터 x까지 반복복
+            for (int i = 1; i <= x; i++) { //i를 1부터 x까지 반복
                 for (int j = 0; j < x - i; j++) { 
                     //별을 오른쪽으로 정렬해야하니까 왼쪽부분은 공백으로 출력                
                     System.out.print(" ");

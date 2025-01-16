@@ -50,7 +50,7 @@ public class sumarray2 {
         // Set의 크기를 기반으로 새로운 배열 생성
         int[] newArray = new int[set.size()];
         int index = 0;
-        // Set에 있는 값을 새로운 배열에 추가가
+        // Set에 있는 값을 새로운 배열에 추가
         for (int num : set) {
             newArray[index++] = num; // set에서 각 값을 배열로 변환
         }
