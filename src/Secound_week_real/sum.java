@@ -5,7 +5,7 @@ public class sum {
         System.out.println("결과");
 
         System.out.print("arry 1 : ");
-
+        
         int[] arr1 = new int[]{2,4,5,6,3};
 
         for (int i = 0; i < arr1.length; i++) {
@@ -25,8 +25,7 @@ public class sum {
 
         System.out.println("merge array : ");
 
-        int  [] arr3 = new int[]{};
-        
+       int[] arr3 = new int[]{};
        
     }
 
