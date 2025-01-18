@@ -23,11 +23,14 @@ public class sum {
         
         System.out.println("");
 
-        System.out.println("merge array : ");
+        System.out.println("merge array : ");  
 
-       int[] arr3 = new int[]{};
-       
-    }
+       /* 시도 1 -> 배열 공간은 나왔으나 숫자는 안나옴....
 
-    
+        int[] sumArray =  new int[arr1.length+arr2.length];
+
+        for (int z = 0; z < sumArray.length; z++) {
+            System.out.print(sumArray[z] + ",");
+        }  */
+    }    
 }
