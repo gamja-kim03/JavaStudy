@@ -12,5 +12,7 @@ public class count {
             }
             System.out.println(array1[i] + "는(은) " + count + "번");
         }
+
+        // 중복된 숫자에 대해 카운트가 반복적으로 출력되는 문제가 발생됨
     }
 }
