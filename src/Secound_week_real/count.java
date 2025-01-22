@@ -1,3 +1,4 @@
+// 2주차 2번 문제
 package Secound_week_real;
 
 public class count {

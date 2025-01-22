@@ -1,3 +1,5 @@
+// 2주차 1번 문제
+
 package Secound_week_real;
 
 public class sum {
@@ -77,18 +79,18 @@ public class sum {
         }  */
  
     public static int[] sum(int[] arr1,int[] arr2){
-    int[] sum = new int[arr1.length+arr2.length];
+        int[] sum = new int[arr1.length+arr2.length];
 
-    for (int i = 0; i < arr1.length; i++) {
-        sum[i] = arr1[i];
-    }
+        for (int i = 0; i < arr1.length; i++) {
+            sum[i] = arr1[i];
+        }
 
-    for (int i = 0; i < arr2.length; i++) {
-        sum[arr1.length+i] = arr2[i];
-    }
-    /* 처음에 sum[i] = arr2[i]로 했는데 앞에서 sum[i] = arr1[i]를 해서 최종적으로는 arr2 값 밖에 안남게됨
-        -> 1,3,4,5,6,0,0,0,0, 이래서 뭔가 이걸 옆으로 밀면 0의 값이 arr2값으로 채워질 것 같다는 생각이 들었음
-    그래서 arr1의 길이 만큼 밀기위해 arr1.lenght를 앞에 더했음 */
-    return sum;
+        for (int i = 0; i < arr2.length; i++) {
+            sum[arr1.length+i] = arr2[i];
+        }
+        /* 처음에 sum[i] = arr2[i]로 했는데 앞에서 sum[i] = arr1[i]를 해서 최종적으로는 arr2 값 밖에 안남게됨
+            -> 1,3,4,5,6,0,0,0,0, 이래서 뭔가 이걸 옆으로 밀면 0의 값이 arr2값으로 채워질 것 같다는 생각이 들었음
+        그래서 arr1의 길이 만큼 밀기위해 arr1.lenght를 앞에 더했음 */
+        return sum;
     }
 }

@@ -1,3 +1,5 @@
+//2주차 4번 문제
+
 package Secound_week_real;
 import java.util.Scanner;
 
