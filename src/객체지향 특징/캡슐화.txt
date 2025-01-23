@@ -19,3 +19,5 @@ ex. my.getwheel() / my.setwheel(4)
 - setter : X  getter : O -> output만 있음 -> 읽기 전용
 
 - setter : O  getter : X -> input만 있음 -> 쓰기 전용
+
+-dlssiud
