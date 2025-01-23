@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class sum {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("결과: ");
+            System.out.println("결과: "); 
              
             System.out.print("num1 : ");
             int x = scanner.nextInt();
