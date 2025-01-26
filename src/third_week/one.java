@@ -1,3 +1,5 @@
+// 2번 문제
+
 package third_week;
 
 public class one {

@@ -1,5 +1,6 @@
-package third_week;
+// 2번
 
+package third_week;
 import java.util.Scanner;
 
 public class out {
