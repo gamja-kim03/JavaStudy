@@ -1,4 +1,4 @@
-// 2번 문제
+// 3주차 3번
 
 package third_week;
 

@@ -1,4 +1,4 @@
-// 2번
+// 3주차 2번
 
 package third_week;
 import java.util.Scanner;
