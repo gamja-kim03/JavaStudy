@@ -12,7 +12,7 @@ class Tvshow {
     }
 
     public void show(){
-        System.out.println(x + "에서 만든 " + y + "년 형 " + z + "인치 TV");
+        System.out.println(x + "에서 만든 " + y + "년 형 `" + z + "인치 TV");
     }
 }
 
