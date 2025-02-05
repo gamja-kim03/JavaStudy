@@ -1,14 +1,11 @@
 package five_week;
 
-class Tvshow {
+class Tv {
     String x;
-    int y;
-    int z;
+    int y, z;
 
-    public Tvshow(String a, int b, int c){
-        x = a;
-        y = b;
-        z = c;
+    public Tv(String a, int b, int c){
+        x = a; y = b; z = c;
     }
 
     public void show(){
@@ -17,9 +14,9 @@ class Tvshow {
 }
 
 
-public class Tv {
+public class Tvshow {
     public static void main(String[] args) {
-        Tvshow myTv = new Tvshow("LG",2017,32);
+        Tv myTv = new Tv("LG",2017,32);
         myTv.show();
     }
 }
