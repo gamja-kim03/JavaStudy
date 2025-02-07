@@ -1,11 +1,22 @@
 package five_week;
 
 class Song {
-    String title, artist, country;
-    int year;
+    String title = "";
+    String artist = "";
+    String country = "";
+    int year = 0;
+    
+    //기본 생성자
 
-    public Song(String a,String b, int c, String d){
-        title = a; artist = b; year = c; country = d;
+    // 메소드 오버로딩 
+    public Song(){
+    }
+
+    public Song(String title ,String artist, int year, String country){
+        this.title = title; 
+        this.artist = artist; 
+        this.year = year; 
+        this.country = country;
     }
         
     public void show(){

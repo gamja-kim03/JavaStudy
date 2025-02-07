@@ -1,15 +1,19 @@
 package five_week;
 
-class Tv {
-    String x;
-    int y, z;
+class Tv { // 접근 지정자를 꼭 지정되어야함
+    // 멤버 변수를 입력할때는 초기값을 입력해야함함
+    public String maker = "";
+    public int year = 2000;
+    public int size = 0;
 
-    public Tv(String a, int b, int c){
-        x = a; y = b; z = c;
+    public Tv(String maker, int year, int size){
+        this.maker = maker; 
+        this.year = year; 
+        this.size = size;
     }
 
     public void show(){
-        System.out.println(x + "에서 만든 " + y + "년 형 `" + z + "인치 TV");
+        System.out.println(maker + "에서 만든 " + year + "년 형 `" + size + "인치 TV");
     }
 }
 

@@ -10,10 +10,11 @@ public class sumgame {
         
         System.out.println("다음 문제를 푸시오.");
 
-        while (true) { 
+        //while (true) { 
             // 숫자 1 생성
-            int [] x= new int [1];
-            for (int i = 0; i < 1; i++) {
+            int x = rand.nextInt(10);
+            /* int [] x= new int [1]; // 길이가 1인 배열 x 선언언
+            for (int i = 0; i < 1; i++) { //
                 x[i] = rand.nextInt(10);
             }
 
@@ -22,14 +23,16 @@ public class sumgame {
 
             for (int i = 0; i < 1; i++) {
                 y[i] = rand.nextInt(10);
-            }
+            } */
             
-            System.out.print(x[0] + " + " + y[0] + " = ");
+            int y = rand.nextInt(10);
+        while (true) {    
+            System.out.print(x + " + " + y+ " = ");
             int my= scanner.nextInt();
 
-            if (answer(x[0], y[0],my)){
+            if (answer(x, y,my)){
                 System.out.println("정답입니다.");
-                break;
+                break; // while문을 빠져나가기 위해 사용
             } else {
                 System.out.println("틀렸습니다");
                 System.out.println("다시 생각해보세요");
@@ -56,3 +59,6 @@ public class sumgame {
     }
 
 }
+
+// 주석으로 코딩 의도 작성하기 다시 수정
+// 배열 쓰지말고 다시 해보기
