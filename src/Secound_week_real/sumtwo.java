@@ -1,3 +1,6 @@
+// 2주차 문제 5번
+// 정수를 담고 있는 2개의 배열을 합친 후 중복된 값이 있으면 하나만 입력되도록 코드를 수정하여 완성하시오
+
 package Secound_week_real;
 
 public class sumtwo {

@@ -1,4 +1,5 @@
 // 3주차 2번
+// 임의의 영어 문자열을 입력 받은 후 모음만 제거하고 출력하는 프로그램
 
 package third_week;
 import java.util.Scanner;

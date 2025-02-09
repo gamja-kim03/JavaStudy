@@ -1,4 +1,12 @@
 //2주차 4번 문제
+// 임의의 자연수를 입력 받아서 아래와 같이 탑이 출력되는 코드를 만드시오
+/*
+    *
+   **
+  ***
+ ****
+*****
+ */
 
 package Secound_week_real;
 import java.util.Scanner;

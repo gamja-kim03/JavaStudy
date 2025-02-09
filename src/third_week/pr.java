@@ -1,4 +1,5 @@
 // 3주차 5번
+// 콤마(,)가 있는 문자열이 있을 때 콤마를 구분자로 문자열을 잘라내어 String 배열에 담은 후 출력하시오
 
 package third_week;
 import java.util.Arrays;

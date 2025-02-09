@@ -1,4 +1,5 @@
-// 문제 1번
+// 문제 1번 
+// 임의의 두 자연수를 입력받아서 두 수의 차를 구하시오. 단 차가 0보다 작으면 0으로 출력해야함
 package First_week;
 import java.util.Scanner;
 

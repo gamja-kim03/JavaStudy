@@ -11,14 +11,14 @@ class Circle{
     private double y;
     private int radius;
 
-    public Circle(double x, double y, int radius){
+    public Circle(double x, double y, int radius){ //매개변수 초기화
         this.x = x;
         this.y = y;
         this.radius = radius;
     }
 
     public void show(){
-        System.out.println("(" + x + "," + y + ")" + radius);
+        System.out.println("(" + x + "," + y + ")" + radius); 
     }
 }
 
