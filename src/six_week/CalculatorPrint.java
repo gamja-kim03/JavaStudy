@@ -1,0 +1,106 @@
+// 4장 11번
+
+/* 다수의 클래스를 만들고 활용하는 연습을 해보자. 더하기, 빼기, 곱하기, 나누기를 수행하는 각 클래스 Add, Sub, Mul, Div를 만들어라. 이들은 모두 다음 필드와 메소드를 가진다.
+- int 타입의 a,b 필드: 2개의 피연산자
+- void setValue(int a, int b): 피연산자 값을 객체 내에 저장한다.
+- int calculate(): 클래스의 목적에 맞는 연산을 실행하고 결과를 리턴한다. */
+
+package six_week;
+
+import java.util.Scanner;
+
+abstract class Calculator { //상속을 사용하라고 해서 부모클래스를 만들었음
+    public int a;
+    public int b;
+    
+    public void setValue(int a, int b){
+        this.a = a;
+        this.b = b;
+    }
+
+    abstract int calculate();
+}
+
+class Add extends Calculator {
+    @Override
+    int calculate(){
+        return a + b;
+    }   
+}
+
+class Sub extends Calculator {
+    @Override
+    int calculate(){
+        return a - b;
+    }   
+}
+
+class Mul extends Calculator {
+    @Override
+    int calculate(){
+        return a * b;
+    }   
+}
+
+class Div extends Calculator {
+    @Override
+    int calculate(){
+        if(b == 0){
+            System.out.println("0으로 나눌 수 없습니다.");
+        }
+        return a /b;
+    }
+
+    // 0으로 나누면 오류가 있어서 b가 0이면 나눌 수 없다는 말을 추가하고 싶어서
+    // 추가했는데 적용이 안됨..
+    
+}
+
+public class CalculatorPrint {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("두 정수와 연산자를 입력하시오 >> ");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        String c = scanner.next();
+
+        /*  이렇게 하니까 오류가 나서 생각해보니 
+        calc가 if문 안에서만 선언되어 코드가 오류가 난 것 같다고 판단하여 수정함
+        
+        if(c.equals("+")){
+           Calculator calc = new Add();
+        }
+        else if(c.equals("-")){
+            Calculator calc = new Sub();   
+        }
+        else if(c.equals("*")){
+            Calculator calc = new Mul();
+        }
+        else if(c.equals("/")){
+            Calculator calc = new Div();
+        }
+
+        calc.setValue(a,b);
+        System.out.println(calc.calculate()); */
+
+        Calculator calc = null;
+
+        if(c.equals("+")){
+            calc = new Add();
+        }
+        else if(c.equals("-")){
+            calc = new Sub();   
+        }
+        else if(c.equals("*")){
+            calc = new Mul();
+        }
+        else if(c.equals("/")){
+            calc = new Div();
+        }
+ 
+        calc.setValue(a,b);
+        System.out.println(calc.calculate());
+    }
+
+}
