@@ -17,9 +17,6 @@ class Rectangle {
     int width = 0;
     int height = 0;
 
-    public Rectangle(){
-    }
-
     public Rectangle(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
@@ -38,6 +35,9 @@ class Rectangle {
     }
 
     //매개변수로 받은 사각형 r이 현재 사각형 내부에 포함되는지 확인하는 메서드
+
+    // 포함된다는 말이 정확히 어떤건지 이해 못함
+    
     /* public  boolean contains(){
         return 
     } */
