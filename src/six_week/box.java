@@ -36,11 +36,11 @@ class Rectangle {
 
     //매개변수로 받은 사각형 r이 현재 사각형 내부에 포함되는지 확인하는 메서드
 
-    // 포함된다는 말이 정확히 어떤건지 이해 못함
-    
-    /* public  boolean contains(){
-        return 
-    } */
+    // 포함된다는 말이 정확히 어떤건지 이해 못해서 넓이를 비교하는 코드로 만들었음
+
+    public boolean contains(Rectangle r){
+        return this.square() >= r.square();
+    }
 }
 public class box {
     public static void main(String[] args) {
@@ -50,12 +50,13 @@ public class box {
 
         r.show();
         System.out.println("s의 면적은 " + s.square());
-     /*   if(t.contains(r)){
-        System.out.println("t는 r을 포함합니다");
-       }
+
+        if(t.contains(r)){
+            System.out.println("t는 r을 포함합니다");
+        }
       
-       if(t.contains(s)) {
-        System.out.println("t는 s를 포함합니다");
-       }    */
+        if(t.contains(s)) {
+            System.out.println("t는 s를 포함합니다");
+        }
     }   
 }
