@@ -36,7 +36,8 @@ class Rectangle {
 
     //매개변수로 받은 사각형 r이 현재 사각형 내부에 포함되는지 확인하는 메서드
 
-    // 포함된다는 말이 정확히 어떤건지 이해 못해서 넓이를 비교하는 코드로 만들었음
+    // 포함한다는 말이 정확히 어떤 의미인지 모르겠어서 
+    // 일단 넓이로 판단하여, 사각형의 넓이가 r의 넓이보다 크거나 같으면 포함된다고 생각했음
 
     public boolean contains(Rectangle r){
         return this.square() >= r.square();
