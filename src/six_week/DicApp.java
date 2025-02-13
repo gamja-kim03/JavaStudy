@@ -57,7 +57,7 @@ public class DicApp {
 
       /* if (input == "그만"){
        break;
-      } 처음에는 이렇게 작성하였는데 문자열을 비교할때는 ==보다 equals를 사용하는 것이 좋다고 하여 변경함함 */
+      } 처음에는 이렇게 작성하였는데 문자열을 비교할때는 ==보다 equals를 사용하는 것이 좋다고 하여 변경함 */
 
       String result = Dictionary.kor2Eng(input);
       if (result!= null) {
