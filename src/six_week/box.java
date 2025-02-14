@@ -12,11 +12,13 @@ package six_week;
 
 class Rectangle {
     // 멤버변수 설정 및 초기화
-    int x = 0;
+    private int x = 0;
     int y = 0;
     int width = 0;
     int height = 0;
 
+
+    // 생성자를 통해 멤버 변수의 값에 매개변수의 값으로 부여함
     public Rectangle(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
@@ -48,16 +50,17 @@ public class box {
         Rectangle r = new Rectangle(2,2,8,7);
         Rectangle s = new Rectangle(5, 5,6,6);
         Rectangle t = new Rectangle(1,1,10,10);
+        // 생성자를 통해 객체를 3개 생성
 
         r.show();
         System.out.println("s의 면적은 " + s.square());
 
         if(t.contains(r)){
             System.out.println("t는 r을 포함합니다");
-        }
+        } // 만약, t의 넓이가 r의 넓이보다 크거나 같으면 t는 r을 포함합니다를 출력함
       
         if(t.contains(s)) {
             System.out.println("t는 s를 포함합니다");
-        }
+        }// 만약, t의 넓이가 s의 넓이보다 크거나 같으면 t는 s를 포함합니다를 출력
     }   
 }

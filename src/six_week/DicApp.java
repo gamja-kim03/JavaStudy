@@ -54,12 +54,14 @@ public class DicApp {
       if("stop".equals(input)){
         break;
       } // 이것도 한글은 적용이 안되어서 stop으로 바꿈
+// 문자열 상수는 객체라서 사용할 수 있음
 
       /* if (input == "그만"){
        break;
-      } 처음에는 이렇게 작성하였는데 문자열을 비교할때는 ==보다 equals를 사용하는 것이 좋다고 하여 변경함 */
+      } 처음에는 이렇게 작성하였는데 문자열을 비교할때는 ==보다 equals를 사용하는 것이 좋다고 하여 변경함 
+        비교연산자가 문자열에서는 적용을 안해서 equals를 쓸 수 밖에없음*/
 
-      String result = Dictionary.kor2Eng(input);
+      String result = Dictionary.kor2Eng(input); //이해하기
       if (result!= null) {
       System.out.println(input + "은(는) " + result);
       } // 이제 값을 비교해야하니까 if를 써서 result가 null값이 아니면 바꾼 단어를 출력

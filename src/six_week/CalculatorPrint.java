@@ -14,9 +14,11 @@ package six_week;
 import java.util.Scanner;
 
 class Calculator { // 상속을 사용하라고 해서 일단 부모클래스를 만들었음
+    // 멤버변수 설정
     public int a;
     public int b;
     
+    //메개변수
     public void setValue(int a, int b){
         this.a = a;
         this.b = b;

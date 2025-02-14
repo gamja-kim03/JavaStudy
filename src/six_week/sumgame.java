@@ -15,7 +15,7 @@ public class sumgame {
         System.out.println("다음 열 문제를 푸시오.");
         
         int rightCount = 0; // 정답 카운트를 세야하니까 변수 생성 및 초기화
-        int wrongCount = 0; // 틀린 갯수도 세야하니까 틀렸을 때 변수 생성 및 초기화화
+        int wrongCount = 0; // 틀린 갯수도 세야하니까 틀렸을 때 변수 생성 및 초기화
         
         // 문제를 10개 반복하기 위해 for문을 사용
         for (int i = 0; i < 10; i++){

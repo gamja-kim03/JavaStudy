@@ -27,6 +27,7 @@ public class CircleManager {
         Scanner scanner = new Scanner(System.in);
 
         Circle c [] = new Circle[3]; //3개의 Circle 배열 선언
+        //c []=> 레퍼런스 변수 , new Citcle[3]은 객체의 배열이지 객체 자체는 아님
 
         for (int i = 0; i < 3; i++) {
             System.out.print ("x, y, radius >>");
@@ -34,7 +35,9 @@ public class CircleManager {
             double y = scanner.nextDouble(); // y값 입력받기
             int radius = scanner.nextInt(); // 반지름
 
-            c[i] = new Circle(x, y, radius); //Circle 객체 생성
+            c[i] = new Circle(x, y, radius); 
+            //Circle의 객체의 값을 위에 만들어짐, 이건 c[]를 통해 c[0]을 통해 출력됨 
+            // 
         }
         for (int i = 0; i < c.length; i++) // 모든 Circle 객체 출력
             c[i].show();
