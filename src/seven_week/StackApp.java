@@ -16,10 +16,10 @@
 package seven_week;
 
 interface Stack {
-    int length();
-    int capacity();
-    String pop();
-    boolean push(String val);
+    public int length(); //스택에 저장된 요소의 개수를 반환
+    public int capacity(); // 스택의 총 용량을 반환
+    public String pop(); // 스택에서 가장 마지막에 저장된 요소
+    public boolean push(String val); // 스택에 값을 추가
 }
 
 // Stack 인터페이스 상속받아 StringStack 클래스 구현
@@ -28,30 +28,30 @@ class StringStack implements Stack {
     private int top; // 현재 스택의 위치
     private int capacity; // 스택의 총 용량
 
-    // 생성자
+    // 생성자 StringStack를 사용해서 사용자가 입력한 용량만큼 배열 초기화
     public StringStack(int capacity) {
-        this.capacity = capacity;
-        this.stack = new String[capacity];
+        this.capacity = capacity; // 멤버변수 capacity에 매개변수 capacity의 값 대입
+        this.stack = new String[capacity]; // 입력한 용량의 크기만큼 배열 생성
         this.top = 0; // 초기에는 비어 있음
     }
 
     @Override
     public int length() {
-        return top; // 현재 스택에 저장된 요소 수
+        return top; // 현재 스택에 저장된 요소 수 반환
     }
 
     @Override
     public int capacity() {
-        return capacity; // 스택의 총 용량
+        return capacity; // 스택의 총 용량 반환
     }
 
     @Override
     public String pop() {
         if (top == 0) {
-            return null; // 스택이 비어 있는 경우
+            return null; // 스택이 비어 있는 경우 null 반환
         }
-        top--; // top을 감소시켜 스택의 마지막 값을 제거
-        return stack[top]; // 제거된 값을 반환
+        top--; // top을 감소시켜 스택의 마지막 값을 꺼냄
+        return stack[top]; // 제거된 값을 반환, 꺼낸 요소를 반환
     }
 
     @Override

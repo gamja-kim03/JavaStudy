@@ -8,6 +8,7 @@ class Point {
     // 멤버 변수 x와 y를 선언하고 각각 초기값 0으로 설정
     public  int x = 0;
     public  int y = 0;
+    public String color = "";
 
     // 멤버 변수의 값에 매개변수 값 대입
     public void setXY(int x, int y){
@@ -19,12 +20,12 @@ class Point {
 // point 클래스를 상속받는 ColorPoint 클래스 설정
 class ColorPoint extends Point {
     // 색상 정보를 저장할 color 멤버 변수를 선언하고 초기값 설정
-    public String color = "";
+    //public String color = "";
 
     //ColorPoint 생성자를 만들었음
     public ColorPoint(int x, int y, String color) {
-        this.setXY(x, y);
-        this.color = color;
+        this.setXY(x, y); // ColorPoint 객체의 setXy 메서드를 호출함 -> 상속받았기 떄문에 가능능
+        this.color = color; // ColorPoint 클래스의 멤버 변수에 매개변수 color 대입입
     }
 
     //색깔을 바꾸기 위해 setColor 메소드를 만들었음
@@ -48,6 +49,7 @@ public class Colorprint {
 
         // setXY 메소드에 x,y 값을 10,20으로 변경
         cp.setXY(10, 20);
+
         // setColor 메소드에 값을 RED로 변경
         cp.setColor("RED");
 
@@ -59,3 +61,10 @@ public class Colorprint {
     
 }
 
+// 
+// 
+/* cp의 값 = x : 5 , y : 5 , color: YELLOW
+   cp.setXY(10,20) = x : 10, y : 20, color : YELLOW
+   cp.setcolor("RED") = x : 10, y : 20, color : RED
+   str : RED색의 (10,20)의 점
+ */
